@@ -26,6 +26,7 @@ public class Main {
             }
         }
 
+
         System.out.println("Введите первое число число: ");
         chislo1 = scanner.nextInt();
         System.out.println("Введите второе число");
