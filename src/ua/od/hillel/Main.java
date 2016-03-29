@@ -21,12 +21,9 @@ public class Main {
                 System.out.println("Enter correct operation");
                 operation = scanner.next();
                 c = operation.charAt(0);
-                if (c == '+' | c == '-'| c == '/' | c == '*') i = 1;
-
+                if (c == '+' | c == '-' | c == '/' | c == '*') i = 1;
             }
         }
-
-
         System.out.println("Введите первое число число: ");
         chislo1 = scanner.nextInt();
         System.out.println("Введите второе число");
