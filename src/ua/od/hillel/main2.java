@@ -6,14 +6,15 @@ import java.util.Scanner;
  * Created by Стивен on 30.03.2016.
  */
 public class main2 {
+    static char c;
     public static void main(String[] args) {
         int number1 = 0, number2 = 0, result = 0;
         Scanner scanner = new Scanner(System.in);
         String operation;
         System.out.println("Enter operation");
         operation = scanner.next();
-        char c = operation.charAt(0);
-        if (function1() | function2() | function3() | function4()) {
+        c = operation.charAt(0);
+        if (function1() || function2() || function3() || function4()) {
             System.out.println("Enter first number: ");
             number1 = scanner.nextInt();
             System.out.println("Enter second number");
