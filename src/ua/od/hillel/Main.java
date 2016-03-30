@@ -6,44 +6,37 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        int chislo1, chislo2, result = 0;
-        String operation;
+        int number1 = 0, number2 = 0, result = 0;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("ведите операцию");
+        String operation;
+        System.out.println("Enter operation");
         operation = scanner.next();
         char c = operation.charAt(0);
-        if (c == '+' | c == '-' | c == '/' | c == '*') {
-            //System.out.println("1");
-        } else {
-            //System.out.println("22");
-            int i;
-            for (i = 100; i > 10; i++) {
-                System.out.println("Enter correct operation");
-                operation = scanner.next();
-                c = operation.charAt(0);
-                if (c == '+' | c == '-' | c == '/' | c == '*') i = 1;
-            }
-        }
-        System.out.println("Введите первое число число: ");
-        chislo1 = scanner.nextInt();
-        System.out.println("Введите второе число");
-        chislo2 = scanner.nextInt();
-        switch (operation) {
-            case "+":
-                result = chislo1 + chislo2;
-                break;
-            case "-":
-                result = chislo1 - chislo2;
-                break;
-            case "*":
-                result = chislo1 * chislo2;
-                break;
-            case "/":
-                result = chislo1 / chislo2;
-                break;
+        if (c == '+' || c == '-' || c == '/' || c == '*') {
+            System.out.println("Enter first number: ");
+            number1 = scanner.nextInt();
+            System.out.println("Enter second number");
+            number2 = scanner.nextInt();
+            switch (operation) {
+                case "+":
+                    result = number1 + number2;
+                    break;
+                case "-":
+                    result = number1 - number2;
+                    break;
+                case "*":
+                    result = number1 * number2;
+                    break;
+                case "/":
+                    result = number1 / number2;
+                    break;
 
+            }
+            System.out.println("Результат:" + result);
+        } else {
+            System.out.println("Error. You enter incorrect operation");
+            System.exit(0);
         }
-        System.out.println("Результат:" + result);
 
 
     }
